@@ -1,0 +1,538 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo-container img {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.school-name {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #1a237e;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 15px 20px;
+}
+
+#navbar li {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffd700;
+}
+
+.login-btn {
+    background-color: #ffd700;
+    color: #333;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #ffed4a;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../assets/img/hero.webp') no-repeat center;
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    padding: 200px 20px 100px;
+    margin-top: 98px;
+    min-height: 600px; /* Adjust this value based on your image height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.primary-btn {
+    background-color: #004d99;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.primary {
+    background: linear-gradient(45deg, #007bff, #00ff8c);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+.secondary {
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+/* Features Section */
+.features {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a237e;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about-details {
+    padding: 80px 0;
+}
+
+.about-details h2 {
+    color: #1a237e;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    color: #1a237e;
+    margin: 25px 0 15px;
+}
+
+.highlights-list, .academics-list {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #1a237e;
+    margin-bottom: 40px;
+}
+
+.contact-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-item i {
+    font-size: 24px;
+    color: #1a237e;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #1a237e;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a237e;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* Add these media queries at the end of the file */
+
+/* Medium screens (tablets, less than 992px) */
+@media screen and (max-width: 992px) {
+    .logo-container {
+        justify-content: center;
+    }
+
+    .school-name {
+        font-size: 20px;
+    }
+
+    #navbar ul {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #navbar li {
+        margin: 0 15px;
+    }
+
+    .hero {
+        padding: 150px 20px 80px;
+        margin-top: 89px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+    .logo-container img {
+        height: 40px;
+    }
+
+    .school-name {
+        font-size: 18px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #navbar li {
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 130px 15px 60px;
+        margin-top: 132px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-text {
+        font-size: 1em;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        padding: 0 15px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        margin: 5px 0;
+    }
+
+    .hamburger {
+        background-color: red;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-150%);
+        -webkit-transform: translateY(-150%);
+        -moz-transform: translateY(-150%);
+        -ms-transform: translateY(-150%);
+        -o-transform: translateY(-150%);
+}
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #navbar {
+        position: relative;
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: #1a237e;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 16px 0;
+    }
+}
+
+/* Extra small screens (small phones, less than 576px) */
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container img {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        margin-top: 155px;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Chrome desktop view in mobile phone */
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    .hero {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+}
